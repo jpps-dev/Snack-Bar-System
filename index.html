@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa da Lanchonete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Caixa da Lanchonete</h1>
+        <p>Sistema de vendas</p>
+    </header>
+    <main>
+        <section class="menu">
+            <h2>Operações</h2>
+
+            <button onclick="cadastrarProduto()">Cadastrar produto</button>
+            <button onclick="listarProdutos()">Listar produtos</button>
+            <button onclick="realizarVenda()">Realizar venda</button>
+            <button onclick="exibirTotalVendasDia()">Total de vendas</button>
+        </section>
+        <section class="produtos">
+            <h2>Produtos cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody id="productsTable">
+                    <tr>
+                        <td colspan="3">Nenhum produto cadastrado.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        Sistema desenvolvido para atividade acadêmica
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
